@@ -7,7 +7,6 @@ HTMLElement.prototype.wrap = function(wrapper) {
 };
 
 NexT.utils = {
-
   /**
    * Wrap images with fancybox.
    */

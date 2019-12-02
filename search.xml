@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>linux性能优化-开篇</title>
+    <url>/2019/11/22/hi-admin-1/</url>
+    <content><![CDATA[<p><img src="/images/linux_tool.png" alt="avatar"></p><p>这个图是 Linux 性能分析最重要的参考资料之一，它告诉你，在 Linux 不同子系统出现性能问题后，应该用什么样的工具来观测和分析。</p><p>比如，当遇到 I/O 性能问题时，可以参考图片最下方的 I/O 子系统，使用 iostat、iotop、blktrace 等工具分析磁盘 I/O 的瓶颈。你可以把这个图保存下来，在需要的时候参考查询。</p><a id="more"></a>
+
+
+<p>另外，我还要特别强调一点，就是性能工具的选用。有句话是这么说的，一个正确的选择胜过千百次的努力。虽然夸张了些，但是选用合适的性能工具，确实可以大大简化整个性能优化过程。在什么场景选用什么样的工具、以及怎么学会选择合适工具，都是我想教给你的东西</p>
+]]></content>
+      <categories>
+        <category>linux-性能优化-cpu</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>page</title>
     <url>/2019/11/21/private/hi/</url>
     <content><![CDATA[<blockquote class="blockquote-center">blah blah blah</blockquote><blockquote class="blockquote-center"><p>blah blah blah</p>
@@ -43,7 +58,7 @@
   <entry>
     <title>jinja2</title>
     <url>/2019/11/20/public/jinja2/</url>
-    <content><![CDATA[<h3 id="1-创建模板"><a href="#1-创建模板" class="headerlink" title="1. 创建模板"></a>1. 创建模板</h3><p><img src="images/Penguins.jpg" alt="avatar"></p><h4 id="1-1-模拟数据"><a href="#1-1-模拟数据" class="headerlink" title="1.1 模拟数据"></a>1.1 模拟数据</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">user = &#123;</span><br><span class="line">    <span class="string">'username'</span>: <span class="string">'phimor'</span>,</span><br><span class="line">    <span class="string">'bio'</span>: <span class="string">'A boy who loves movies and music.'</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">movies = [</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'My Neighbor Totoro'</span>, <span class="string">'year'</span>: <span class="string">'1988'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Three Colours trilogy'</span>, <span class="string">'year'</span>: <span class="string">'1993'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Forrest Gump'</span>, <span class="string">'year'</span>: <span class="string">'1994'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Perfect Blue'</span>, <span class="string">'year'</span>: <span class="string">'1997'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'The Matrix'</span>, <span class="string">'year'</span>: <span class="string">'1999'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Memento'</span>, <span class="string">'year'</span>: <span class="string">'2000'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'The Bucket list'</span>, <span class="string">'year'</span>: <span class="string">'2007'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Black Swan'</span>, <span class="string">'year'</span>: <span class="string">'2010'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Gone Girl'</span>, <span class="string">'year'</span>: <span class="string">'2014'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'CoCo'</span>, <span class="string">'year'</span>: <span class="string">'2017'</span>&#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<h3 id="1-创建模板"><a href="#1-创建模板" class="headerlink" title="1. 创建模板"></a>1. 创建模板</h3><h4 id="1-1-模拟数据"><a href="#1-1-模拟数据" class="headerlink" title="1.1 模拟数据"></a>1.1 模拟数据</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">user = &#123;</span><br><span class="line">    <span class="string">'username'</span>: <span class="string">'phimor'</span>,</span><br><span class="line">    <span class="string">'bio'</span>: <span class="string">'A boy who loves movies and music.'</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">movies = [</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'My Neighbor Totoro'</span>, <span class="string">'year'</span>: <span class="string">'1988'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Three Colours trilogy'</span>, <span class="string">'year'</span>: <span class="string">'1993'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Forrest Gump'</span>, <span class="string">'year'</span>: <span class="string">'1994'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Perfect Blue'</span>, <span class="string">'year'</span>: <span class="string">'1997'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'The Matrix'</span>, <span class="string">'year'</span>: <span class="string">'1999'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Memento'</span>, <span class="string">'year'</span>: <span class="string">'2000'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'The Bucket list'</span>, <span class="string">'year'</span>: <span class="string">'2007'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Black Swan'</span>, <span class="string">'year'</span>: <span class="string">'2010'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'Gone Girl'</span>, <span class="string">'year'</span>: <span class="string">'2014'</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>: <span class="string">'CoCo'</span>, <span class="string">'year'</span>: <span class="string">'2017'</span>&#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>flask</category>
       </categories>
@@ -71,11 +86,11 @@
 
 <hr>
 <h4 id="load-average-平均负载-系统平均活跃进程数"><a href="#load-average-平均负载-系统平均活跃进程数" class="headerlink" title="load average(平均负载,系统平均活跃进程数)"></a>load average(平均负载,系统平均活跃进程数)</h4><h5 id="一、查看系统负荷"><a href="#一、查看系统负荷" class="headerlink" title="一、查看系统负荷"></a>一、查看系统负荷</h5><div class="note success">
-            <p>如果你的电脑很慢，你或许想查看一下，它的工作量是否太大了。<br>在Linux系统中，我们一般使用uptime命令查看（w命令和top命令也行）。（另外，它们在苹果公司的Mac电脑上也适用。）<br>你在终端窗口键入uptime，系统会返回一行信息。<br>这行信息的后半部分，显示”load average”，它的意思是”系统的平均负荷”，里面有三个数字，我们可以从中判断系统负荷是大还是小。<br>为什么会有三个数字呢？你从手册中查到，它们的意思分别是1分钟、5分钟、15分钟内系统的平均负荷。<br>如果你继续看手册，它还会告诉你，当CPU完全空闲的时候，平均负荷为0；当CPU工作量饱和的时候，平均负荷为1。<br>那么很显然，”load average”的值越低，比如等于0.2或0.3，就说明电脑的工作量越小，系统负荷比较轻。<br>但是，什么时候能看出系统负荷比较重呢？等于1的时候，还是等于0.5或等于1.5的时候？如果1分钟、5分钟、15分钟三个值不一样，怎么办？</p>
+            <ul><li>如果你的电脑很慢，你或许想查看一下，它的工作量是否太大了。在Linux系统中，我们一般使用uptime命令查看（w命令和top命令也行）。（另外，它们在苹果公司的Mac电脑上也适用。）</li><li>你在终端窗口键入uptime，系统会返回一行信息。这行信息的后半部分，显示”load average”，它的意思是”系统的平均负荷”，里面有三个数字，我们可以从中判断系统负荷是大还是小。</li><li>为什么会有三个数字呢？你从手册中查到，它们的意思分别是1分钟、5分钟、15分钟内系统的平均负荷。</li><li>如果你继续看手册，它还会告诉你，当CPU完全空闲的时候，平均负荷为0；当CPU工作量饱和的时候，平均负荷为1。</li><li>那么很显然，”load average”的值越低，比如等于0.2或0.3，就说明电脑的工作量越小，系统负荷比较轻。</li><li>但是，什么时候能看出系统负荷比较重呢？等于1的时候，还是等于0.5或等于1.5的时候？如果1分钟、5分钟、15分钟三个值不一样，怎么办？</li></ul>
           </div>
 
 <h5 id="二、一个类比"><a href="#二、一个类比" class="headerlink" title="二、一个类比"></a>二、一个类比</h5><div class="note success">
-            <p>判断系统负荷是否过重，必须理解load average的真正含义。下面，我根据”Understanding Linux CPU Load”这篇文章，尝试用最通俗的语言，解释这个问题。<br>首先，假设最简单的情况，你的电脑只有一个CPU，所有的运算都必须由这个CPU来完成。<br>那么，我们不妨把这个CPU想象成一座大桥，桥上只有一根车道，所有车辆都必须从这根车道上通过。（很显然，这座桥只能单向通行。）<br>系统负荷为0，意味着大桥上一辆车也没有。<br>系统负荷为0.5，意味着大桥一半的路段有车。<br>系统负荷为1.0，意味着大桥的所有路段都有车，也就是说大桥已经”满”了。但是必须注意的是，直到此时大桥还是能顺畅通行的。<br>系统负荷为1.7，意味着车辆太多了，大桥已经被占满了（100%），后面等着上桥的车辆为桥面车辆的70%。以此类推，系统负荷2.0，意味着等待上桥的车辆与桥面的车辆一样多；系统负荷3.0，意味着等待上桥的车辆是桥面车辆的2倍。总之，当系统负荷大于1，后面的车辆就必须等待了；系统负荷越大，过桥就必须等得越久。<br>CPU的系统负荷，基本上等同于上面的类比。大桥的通行能力，就是CPU的最大工作量；桥梁上的车辆，就是一个个等待CPU处理的进程（process）。<br>如果CPU每分钟最多处理100个进程，那么系统负荷0.2，意味着CPU在这1分钟里只处理20个进程；系统负荷1.0，意味着CPU在这1分钟里正好处理100个进程；系统负荷1.7，意味着除了CPU正在处理的100个进程以外，还有70个进程正排队等着CPU处理。<br>为了电脑顺畅运行，系统负荷最好不要超过1.0，这样就没有进程需要等待了，所有进程都能第一时间得到处理。很显然，1.0是一个关键值，超过这个值，系统就不在最佳状态了，你要动手干预了。</p>
+            <ul><li>判断系统负荷是否过重，必须理解load average的真正含义。下面，我根据”Understanding Linux CPU Load”这篇文章，尝试用最通俗的语言，解释这个问题。</li><li>首先，假设最简单的情况，你的电脑只有一个CPU，所有的运算都必须由这个CPU来完成。</li><li>那么，我们不妨把这个CPU想象成一座大桥，桥上只有一根车道，所有车辆都必须从这根车道上通过。（很显然，这座桥只能单向通行。）<ul><li>系统负荷为0，意味着大桥上一辆车也没有。</li><li>系统负荷为0.5，意味着大桥一半的路段有车。</li><li>系统负荷为1.0，意味着大桥的所有路段都有车，也就是说大桥已经”满”了。但是必须注意的是，直到此时大桥还是能顺畅通行的。</li><li>系统负荷为1.7，意味着车辆太多了，大桥已经被占满了（100%），后面等着上桥的车辆为桥面车辆的70%。以此类推，系统负荷2.0，意味着等待上桥的车辆与桥面的车辆一样多；系统负荷3.0，意味着等待上桥的车辆是桥面车辆的2倍。总之，当系统负荷大于1，后面的车辆就必须等待了；系统负荷越大，过桥就必须等得越久。</li></ul></li><li>CPU的系统负荷，基本上等同于上面的类比。大桥的通行能力，就是CPU的最大工作量；桥梁上的车辆，就是一个个等待CPU处理的进程（process）。</li><li>如果CPU每分钟最多处理100个进程，那么系统负荷0.2，意味着CPU在这1分钟里只处理20个进程；系统负荷1.0，意味着CPU在这1分钟里正好处理100个进程；系统负荷1.7，意味着除了CPU正在处理的100个进程以外，还有70个进程正排队等着CPU处理。</li><li>为了电脑顺畅运行，系统负荷最好不要超过1.0，这样就没有进程需要等待了，所有进程都能第一时间得到处理。很显然，1.0是一个关键值，超过这个值，系统就不在最佳状态了，你要动手干预了。</li></ul>
           </div>
 
 <h5 id="三、系统负荷的经验法则"><a href="#三、系统负荷的经验法则" class="headerlink" title="三、系统负荷的经验法则"></a>三、系统负荷的经验法则</h5><div class="note success">
@@ -83,34 +98,34 @@
           </div>
 
 <h5 id="四、多处理器"><a href="#四、多处理器" class="headerlink" title="四、多处理器"></a>四、多处理器</h5><div class="note success">
-            <p>上面，我们假设你的电脑只有1个CPU。如果你的电脑装了2个CPU，会发生什么情况呢？<br>2个CPU，意味着电脑的处理能力翻了一倍，能够同时处理的进程数量也翻了一倍。<br>还是用大桥来类比，两个CPU就意味着大桥有两根车道了，通车能力翻倍了。<br>所以，2个CPU表明系统负荷可以达到2.0，此时每个CPU都达到100%的工作量。推广开来，n个CPU的电脑，可接受的系统负荷最大为n.0。</p>
+            <ul><li>上面，我们假设你的电脑只有1个CPU。如果你的电脑装了2个CPU，会发生什么情况呢？</li><li>2个CPU，意味着电脑的处理能力翻了一倍，能够同时处理的进程数量也翻了一倍。</li><li>还是用大桥来类比，两个CPU就意味着大桥有两根车道了，通车能力翻倍了。</li><li>所以，2个CPU表明系统负荷可以达到2.0，此时每个CPU都达到100%的工作量。推广开来，n个CPU的电脑，可接受的系统负荷最大为n.0。</li></ul>
           </div>
 <h5 id="五、多核处理器"><a href="#五、多核处理器" class="headerlink" title="五、多核处理器"></a>五、多核处理器</h5><div class="note success">
-            <p>芯片厂商往往在一个CPU内部，包含多个CPU核心，这被称为多核CPU。<br>在系统负荷方面，多核CPU与多CPU效果类似，所以考虑系统负荷的时候，必须考虑这台电脑有几个CPU、每个CPU有几个核心。然后，把系统负荷除以总的核心数，只要每个核心的负荷不超过1.0，就表明电脑正常运行。<br>怎么知道电脑有多少个CPU核心呢？<br>“cat /proc/cpuinfo”命令，可以查看CPU信息。”grep -c ‘model name’ /proc/cpuinfo”命令，直接返回CPU的总核心数。</p>
+            <ul><li>芯片厂商往往在一个CPU内部，包含多个CPU核心，这被称为多核CPU。</li><li>在系统负荷方面，多核CPU与多CPU效果类似，所以考虑系统负荷的时候，必须考虑这台电脑有几个CPU、每个CPU有几个核心。然后，把系统负荷除以总的核心数，只要每个核心的负荷不超过1.0，就表明电脑正常运行。</li><li>怎么知道电脑有多少个CPU核心呢？</li><li>“cat /proc/cpuinfo”命令，可以查看CPU信息。”grep -c ‘model name’ /proc/cpuinfo”命令，直接返回CPU的总核心数。</li></ul>
           </div>
 
 <h5 id="六、最佳观察时长"><a href="#六、最佳观察时长" class="headerlink" title="六、最佳观察时长"></a>六、最佳观察时长</h5><div class="note success">
-            <p>最后一个问题，”load average”一共返回三个平均值—-1分钟系统负荷、5分钟系统负荷，15分钟系统负荷，—-应该参考哪个值？<br>如果只有1分钟的系统负荷大于1.0，其他两个时间段都小于1.0，这表明只是暂时现象，问题不大。<br>如果15分钟内，平均系统负荷大于1.0（调整CPU核心数之后），表明问题持续存在，不是暂时现象。所以，你应该主要观察”15分钟系统负荷”，将它作为电脑正常运行的指标。</p>
+            <ul><li>最后一个问题，”load average”一共返回三个平均值—-1分钟系统负荷、5分钟系统负荷，15分钟系统负荷，—-应该参考哪个值？</li><li>如果只有1分钟的系统负荷大于1.0，其他两个时间段都小于1.0，这表明只是暂时现象，问题不大。</li><li>如果15分钟内，平均系统负荷大于1.0（调整CPU核心数之后），表明问题持续存在，不是暂时现象。所以，你应该主要观察”15分钟系统负荷”，将它作为电脑正常运行的指标。</li></ul>
           </div>
 <hr>
 <h4 id="context-switch-上下文交换"><a href="#context-switch-上下文交换" class="headerlink" title="context switch(上下文交换)"></a>context switch(上下文交换)</h4><div class="note success">
-            <p>又称环境切换，计算机术语，是一个存储和重建CPU的状态 (内文)，因此令多个进程(process)可以分享单一CPU资源的计算过程。要交换CPU上的进程时，必需先行存储当前进程的状态，再将欲运行的进程之状态读回CPU中。</p>
+            <ul><li>又称环境切换，计算机术语，是一个存储和重建CPU的状态 (内文)，因此令多个进程(process)可以分享单一CPU资源的计算过程。要交换CPU上的进程时，必需先行存储当前进程的状态，再将欲运行的进程之状态读回CPU中。</li></ul>
           </div>
 
 <h5 id="开销"><a href="#开销" class="headerlink" title="开销"></a>开销</h5><div class="note success">
-            <p>上下文交换通常是计算密集型的，操作系统中的许多设计都是针对上下文交换的优化。在进程间切换需要消耗一定的时间进行相关的管理工作——包括寄存器和内存映射的保存与读取、更新各种内部的表等等。处理器或者操作系统不同，上下文交换时所涉及的内容也不尽相同。比如在Linux内核中，上下文交换需要涉及寄存器、栈指针、程序计数器的交换，但和地址空间的交换无关（虽然进程在进行上下文交换时也需要做地址空间的交换）[2][3]。用户态线程之间也会发生类似的上下文交换，但这样的交换非常轻量。</p>
+            <ul><li>上下文交换通常是计算密集型的，操作系统中的许多设计都是针对上下文交换的优化。在进程间切换需要消耗一定的时间进行相关的管理工作——包括寄存器和内存映射的保存与读取、更新各种内部的表等等。处理器或者操作系统不同，上下文交换时所涉及的内容也不尽相同。比如在Linux内核中，上下文交换需要涉及寄存器、栈指针、程序计数器的交换，但和地址空间的交换无关（虽然进程在进行上下文交换时也需要做地址空间的交换）[2][3]。用户态线程之间也会发生类似的上下文交换，但这样的交换非常轻量。</li></ul>
           </div>
 
 <h5 id="何时交换"><a href="#何时交换" class="headerlink" title="何时交换"></a>何时交换</h5><div class="note success">
-            <p>有三种可能的情况会发生上下文交换，分别为：<br><strong>多任务</strong><br>最常见的，在一些调度(scheduling)算法内，其中行程有时候需要暂时离开CPU，让另一个行程进来CPU运作。在先占式多任务系统中，每一个行程都将轮流运行不定长度的时间，这些时间段落称为时间片。如果行程并非自愿让出CPU(例如运行I/O操作时，行程就需放弃CPU使用权)，当时限到时，系统将产生一个定时中断，操作系统将排定由其它的行程来运行。此机制用以确保CPU不致被较依赖处理器运算的行程垄断。若无定时中断，除非行程自愿让出CPU，否则该行程将持续运行。对于拥有较多I/O指令的行程，往往运行不了多久，便需要让出CPU；而较依赖处理器的行程相对而言I/O操作较少，反而能一直持续使用CPU，便形成了垄断现象。<br><strong>中断处理</strong><br>在接受到中断（Interrupt）的时候，CPU必须要进行上下文交换。<br><strong>用户态或者内核态的交换</strong><br>当用户态和内核态交换发生的时候，并不需要进行上下文交换；并且用户态和kernel mode的交换本身并不是一个上下文交换。不过，根据操作系统的不同，有时候会在此时进行一次上下文交换的步骤。</p>
+            <p>有三种可能的情况会发生上下文交换，分别为：<br><strong>多任务</strong></p><ul><li>最常见的，在一些调度(scheduling)算法内，其中行程有时候需要暂时离开CPU，让另一个行程进来CPU运作。</li><li>在先占式多任务系统中，每一个行程都将轮流运行不定长度的时间，这些时间段落称为时间片。</li><li>如果行程并非自愿让出CPU(例如运行I/O操作时，行程就需放弃CPU使用权)，当时限到时，系统将产生一个定时中断，操作系统将排定由其它的行程来运行。</li><li>此机制用以确保CPU不致被较依赖处理器运算的行程垄断。若无定时中断，除非行程自愿让出CPU，否则该行程将持续运行。</li><li>对于拥有较多I/O指令的行程，往往运行不了多久，便需要让出CPU；而较依赖处理器的行程相对而言I/O操作较少，反而能一直持续使用CPU，便形成了垄断现象。</li></ul><p><strong>中断处理</strong></p><ul><li>在接受到中断（Interrupt）的时候，CPU必须要进行上下文交换。</li></ul><p><strong>用户态或者内核态的交换</strong></p><ul><li>当用户态和内核态交换发生的时候，并不需要进行上下文交换；</li><li>并且用户态和kernel mode的交换本身并不是一个上下文交换。</li><li>不过，根据操作系统的不同，有时候会在此时进行一次上下文交换的步骤。</li></ul>
           </div>
 
 <h5 id="上下文交换：具体步骤"><a href="#上下文交换：具体步骤" class="headerlink" title="上下文交换：具体步骤"></a>上下文交换：具体步骤</h5><div class="note success">
-            <p>在一次交换中，第一个行程的状态要被纪录在某个地方，这样当调度器(scheduler)要回到这个行程时，才可以重建这个行程并且继续运算。这里所谓“行程的状态”，包含了这个行程使用的所有寄存器(register)，特别是程序计数器；加上所有操作系统可能需要的特定数据。这些数据一般以名为行程控制表(process control block，PCB)的数据结构存储起来。</p>
+            <ul><li>在一次交换中，第一个行程的状态要被纪录在某个地方，这样当调度器(scheduler)要回到这个行程时，才可以重建这个行程并且继续运算。</li><li>这里所谓“行程的状态”，包含了这个行程使用的所有寄存器(register)，特别是程序计数器；加上所有操作系统可能需要的特定数据。</li><li>这些数据一般以名为行程控制表(process control block，PCB)的数据结构存储起来。</li></ul>
           </div>
 
 <h5 id="上下文交换：由软件或硬件实现"><a href="#上下文交换：由软件或硬件实现" class="headerlink" title="上下文交换：由软件或硬件实现"></a>上下文交换：由软件或硬件实现</h5><div class="note success">
-            <p>上下文交换可分为主要由软件实现或由硬件实现。部分中央处理器，比如Intel 80386[4]或同系列更高端的处理器，就具备支持上下文交换的硬件设计。</p>
+            <ul><li>上下文交换可分为主要由软件实现或由硬件实现。部分中央处理器，比如Intel 80386[4]或同系列更高端的处理器，就具备支持上下文交换的硬件设计。</li></ul>
           </div>]]></content>
       <categories>
         <category>linux</category>
@@ -133,15 +148,11 @@
   <entry>
     <title>Hello World</title>
     <url>/2019/04/24/public/hello-world/</url>
-    <content><![CDATA[<div class="note success">
-            <p>This is your very first post. Check</p>
-          </div><p>$$f(x) = a_1x^n + a_2x^{n-1} + a_3x^{n-2}$$</p><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
+    <content><![CDATA[<p>$$f(x) = a_1x^n + a_2x^{n-1} + a_3x^{n-2}$$</p><hr><p>更新后没有了_custom文件夹和custom.styl文件啊，这个功能能不能增加到config里更新后没有了_custom文件夹和custom.styl文件啊，这个功能能不能增加到config里更新后没有了_custom文件夹和custom.styl文件啊，这个功能能不能增加到config里</p><a id="more"></a>
 
+<p>
 
-
-
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
